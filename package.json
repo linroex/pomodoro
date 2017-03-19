@@ -1,0 +1,14 @@
+{
+  "name": "pomodoro",
+  "version": "0.0.1",
+  "main": "main.js",
+  "repository": {
+    "url": "git@github.com:linroex/pomodoro.git",
+    "type": "git"
+  },
+  "author": "Karl Lin <linroex@coder.tw>",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.6.2"
+  }
+}

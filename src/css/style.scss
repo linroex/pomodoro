@@ -25,6 +25,11 @@ body {
   display: flex;
   background: #DA2F22;
   margin: 10px;
+
+  &:active {
+    background: #531810;
+    
+  }
 }
 .btn-full{
   width: 85%;

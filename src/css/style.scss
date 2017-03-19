@@ -76,12 +76,12 @@ body {
   align-content: space-around;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  box-sizing: border-box;
+  padding: 10px;
 
   .item {
     border-radius: 100%;
-    margin: 10px;
+    margin: 6px;
     width: 25px;
     height: 25px;
     background: #8A9B9C;

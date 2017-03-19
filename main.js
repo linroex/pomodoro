@@ -27,6 +27,10 @@ function createWindow() {
     // when you should delete the corresponding element.
     win = null
   })
+
+  win.on('focus', () => {
+    app.dock.setBadge('');
+  })
 }
 
 // This method will be called when Electron has finished
@@ -50,7 +54,6 @@ app.on('activate', () => {
     createWindow()
   }
 
-  app.dock.setBadge('');
 })
 
 // In this file you can include the rest of your app's specific main process

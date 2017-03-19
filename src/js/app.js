@@ -45,6 +45,8 @@ countdown = function() {
       } else {
         timer_id = clearInterval(timer_id);
         $("#result .item:not(.item-done)").first().addClass("item-done");
+        remote.app.dock.setBadge('休息啦');
+        notify('休息啦');
       }
     }, 1000);
   }

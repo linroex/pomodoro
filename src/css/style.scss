@@ -17,6 +17,7 @@ body {
   font-size: 12px;
   font-family: 'Noto Sans CJK TC';
 }
+
 .btn{
   width: 50%;
   height: 50px;
@@ -78,13 +79,13 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
 
   .item {
     border-radius: 100%;
     margin: 6px;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background: #8A9B9C;
   }
 

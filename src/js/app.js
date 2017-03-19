@@ -84,6 +84,8 @@ sleep_countdown = function(min) {
     $("#takebreak_btn").hide();
     $("body").removeClass("sleep");
     $("#timer .insider").text(pomodoro_duration);
+    
+    $("#menu .num").text(parseInt($("#menu .num").text()) + 1);
   })
 }
 

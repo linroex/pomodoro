@@ -10,6 +10,14 @@ body {
   font-weight: 100;
 }
 
+body.sleep {
+  background: #2E4053;
+  #controls .btn {
+    background: #1A3446;
+  }
+  
+}
+
 #menu, #timer, #controls, #result {
   width: 100%;
 
@@ -94,3 +102,7 @@ body {
   }
 }
 
+#takebreak_btn {
+  justify-content: center;
+  
+}

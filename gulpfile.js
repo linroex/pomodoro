@@ -3,9 +3,9 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 
 gulp.task('build_css', function() {
-  return gulp.src('./src/css/*.css')
-    .pipe(sass())
+  return gulp.src('./src/css/*')
     .pipe(concat('all.css'))
+    .pipe(sass())
     .pipe(gulp.dest('./dist/css'));
 });
 

@@ -5,7 +5,7 @@ var concat = require('gulp-concat');
 gulp.task('build_css', function() {
   return gulp.src('./src/css/*')
     .pipe(concat('all.css'))
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./dist/css'));
 });
 

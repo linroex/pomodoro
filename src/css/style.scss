@@ -1,13 +1,18 @@
+html {
+  height: 100%;
+}
 body {
   background: #E44235;
   display: flex;
   flex-direction: column;
+  height: 100%;
   margin: 0;
   font-weight: 100;
 }
 
 #menu, #timer, #controls, #result {
   width: 100%;
+
   color: white;
   font-size: 12px;
   font-family: 'Noto Sans CJK TC';
@@ -30,13 +35,19 @@ body {
 
 #menu {
   color: white;
-  text-align: right;
-  i{
+  display: flex;
+  justify-content: flex-end;
+  #setting{
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
     color: white;
+    font-size: 20px;
   }
 }
 
 #timer {
+  flex: 1;
   font-size: 100px;
   text-align: center;
 }
@@ -48,12 +59,15 @@ body {
     float: left;
   }
   display: flex;
+  flex: 1;
   justify-content:space-around;
+  align-items: flex-end;
 }
 
 #result {
   background-color: #E9EEEF;
   display: flex;
+  flex: 1;
   align-content: space-around;
   justify-content: center;
   flex-wrap: wrap;

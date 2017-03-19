@@ -25,7 +25,7 @@ $("#stop_timer").click(function() {
 
 $("#resume_timer").click(function () {
   countdown();
-  
+
   $("#stop_timer, #resume_timer").hide();
   $("#pause_timer").show();
 })
@@ -33,15 +33,18 @@ $("#resume_timer").click(function () {
 countdown = function() {
   if (timer_id === undefined) {
     var current_time = $("#timer .insider").text().trim().split(":");
-    current_time = parseInt(current_time[0]) * 60 + parseInt(current_time[1]);
+    current_time = parseInt(current_time[0]) * 60 + parseInt(current_time[1]) - 1;
+    var time_text = padleft(Math.floor(current_time / 60), 2) + ":" + padleft(Math.floor(current_time % 60), 2);
+    $("#timer .insider").text(time_text);
 
     timer_id = setInterval(function () {
       if (current_time > 0) {
         current_time -= 1;
-        var time_text = padleft(Math.floor(current_time / 60), 2) + ":" + padleft(Math.floor(current_time % 60), 2);
+        time_text = padleft(Math.floor(current_time / 60), 2) + ":" + padleft(Math.floor(current_time % 60), 2);
         $("#timer .insider").text(time_text);
       } else {
         timer_id = clearInterval(timer_id);
+        $("#result .item:not(.item-done)").first().addClass("item-done");
       }
     }, 1000);
   }

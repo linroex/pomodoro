@@ -32,7 +32,7 @@ body {
   }
 }
 .btn-full{
-  width: 85%;
+  width: 100%;
 }
 .insider {
   padding: 10px;
@@ -60,6 +60,7 @@ body {
   clear: both;
 }
 #controls {
+  // width: 80%;
   .btn{
     float: left;
   }
@@ -85,6 +86,10 @@ body {
     width: 25px;
     height: 25px;
     background: #8A9B9C;
+  }
+
+  .item-done {
+    background: #E44235;
   }
 }
 

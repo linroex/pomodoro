@@ -55,7 +55,11 @@ countdown = function(callback) {
 
 pomodoro_countdown = function() {
     countdown(function() {
-      $("#result .item:not(.item-done)").first().addClass("item-done");
+      if($("result .item:not(.item-done)").length == 0) {
+        $("#result").append('<dic class="item item-done">');
+      }else{
+        $("#result .item:not(.item-done)").first().addClass("item-done");
+      }
 
       var sleep_min;
       if ($("#result .item-done").length % 4 == 0) {
